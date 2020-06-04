@@ -1,0 +1,18 @@
+
+extends layout.jade
+block content
+	div.subir
+		-each foto in datos
+			form(method ="POST" action = "/edi/#{foto.title}")
+				label titulo:
+				input(type="text" name ="principal" required value ="#{datos[0].title}")
+				br
+				label imagen:
+				input(type="text" name ="img" required value ="#{foto.foto}")
+				br
+				label descripcion:
+				input(type="text" name ="comentario" required value="#{foto.description}")
+				br
+				input(type ='submit',value = "EDITAR")
+
+

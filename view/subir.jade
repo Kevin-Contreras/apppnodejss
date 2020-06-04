@@ -1,0 +1,16 @@
+extends layout.jade
+block content
+	div.subir
+		form(method ="POST" action = "/subiendo")
+			label titulo:
+			input(type="text" name ="principal" required)
+			br
+			label imagen:
+			input(type="text" name ="img" required)
+			br
+			label descripcion:
+			input(type="text" name ="comentario" required)
+			br
+			input(type ='submit',value = "Subir")
+
+

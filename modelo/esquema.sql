@@ -1,0 +1,15 @@
+DROP DATABASE IF EXISTS fotoscart;
+
+CREATE DATABASE IF NOT EXISTS fotoscart;
+
+USE fotoscart;
+
+CREATE TABLE IF NOT EXISTS fotos(
+	title VARCHAR(9) PRIMARY KEY,
+	foto VARCHAR(300),
+	description VARCHAR(200),
+	mensaje VARCHAR (100)
+	
+
+
+);

@@ -1,0 +1,39 @@
+extends layout.jade
+block content
+	nav.nav
+		div.item
+			a.t(href ="/")=locals.title
+			form.form(method="GET" action ="/subir")
+				input(type="submit",value="subir imagen")
+			
+	div.v
+		-if (locals.datos.length)
+			each foto in locals.datos
+				div.imagen
+					form(method="POST" action="/eliminar/#{foto.title}" )
+						input#id(type="button" value="X" onclick = "eliminar()")
+					img.icon(src="#{foto.foto}")
+					h3.title #{foto.title}
+					img.img(src="#{foto.foto}")
+					form(method="GET" action="/editar/#{foto.title}" )
+						input#id(type="submit" value="Editar" )
+					h3 #{foto.description}
+					form(method= "POST" action="/comentario")
+						input.mensaje(type="text" name ="mensaje"  placeholder="Comentario....." )
+						input(type="hidden" name="description" value="#{foto.description}" )
+						input.button(type="submit" value="enviar")
+					p #{foto.mensaje}
+			script.
+				x = document.querySelector('#id')
+				function eliminar(){
+					var deleteOk = confirm('Estas seguro de que quieres eliminar tu post')
+					return(deleteOk)? x.parentNode.submit():false;
+					}
+				
+				
+
+		-else 
+			p no hay fotos
+			
+			
+
