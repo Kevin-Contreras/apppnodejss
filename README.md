@@ -1,2 +1,2 @@
 # app-nodejs
-parte principal de una red social 
+Parte principal de una red social. 
