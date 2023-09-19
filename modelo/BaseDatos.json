@@ -1,9 +1,9 @@
 {
 	"mysql":{
-		"host":"localhost",
+		"host":"bsofyx1pyoe2zs0lue84-mysql.services.clever-cloud.com",
 		"port":3306,
-		"user":"root",
-		"pass":"LUkczSs95htJI6IU",
-		"db":"fotoscart"
+		"user":"ugdbob8vr6ikqhyg",
+		"pass":"C97PUYJGGnuCRaPmLkMG",
+		"db":"bsofyx1pyoe2zs0lue84"
 	}
 }

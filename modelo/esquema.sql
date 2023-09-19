@@ -1,8 +1,8 @@
-DROP DATABASE IF EXISTS fotoscart;
+DROP DATABASE IF EXISTS bsofyx1pyoe2zs0lue84;
 
-CREATE DATABASE IF NOT EXISTS fotoscart;
+CREATE DATABASE IF NOT EXISTS bsofyx1pyoe2zs0lue84;
 
-USE fotoscart;
+USE bsofyx1pyoe2zs0lue84;
 
 CREATE TABLE IF NOT EXISTS fotos(
 	title VARCHAR(9) PRIMARY KEY,
