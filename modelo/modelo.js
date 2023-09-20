@@ -5,6 +5,7 @@ modelo = ()=>{
 }
 
 modelo.getAll = (cb) => {
+	
 	conection.query('SELECT * FROM fotos ', cb )
 }
 
