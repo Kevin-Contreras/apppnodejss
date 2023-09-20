@@ -1,4 +1,3 @@
-'use strict'
 var express = require('express'),
 	favicon = require('serve-favicon'),
 	bodyParse = require('body-parser'),
@@ -15,7 +14,6 @@ var express = require('express'),
 
 	app
 		.set('views',vista)
-		.set('view engine','jade')
 		.set('port',puerto)
 		
 		.use(favicon(faviconUrl))
