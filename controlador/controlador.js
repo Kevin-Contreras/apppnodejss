@@ -1,4 +1,3 @@
-'use strict'
 var modelo = require('../modelo/modelo.js'),
 controlador = (req,res,next)=>{
 

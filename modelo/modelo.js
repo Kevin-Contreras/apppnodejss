@@ -1,4 +1,3 @@
-'use strict'
 var conection = require('../modelo/conectionBase.js'),
 
 modelo = ()=>{
