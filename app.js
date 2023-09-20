@@ -14,6 +14,7 @@ var express = require('express'),
 
 	app
 		.set('views',vista)
+		.set('view engine','jade')
 		.set('port',puerto)
 		
 		.use(favicon(faviconUrl))
