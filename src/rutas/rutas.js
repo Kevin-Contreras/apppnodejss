@@ -1,5 +1,4 @@
-'use strict'
-var controlador = require('../controlador/controlador.js'),
+var controlador = require('../controlador/controlador'),
 express = require('express'),
 rutas = express.Router()
 
