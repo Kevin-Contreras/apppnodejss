@@ -1,4 +1,4 @@
-var conection = require('../modelo/conectionBase.js'),
+var conection = require('./conectionBase.js'),
 
 modelo = ()=>{
 

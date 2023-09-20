@@ -1,4 +1,4 @@
-var modelo = require('../modelo/modelo.js'),
+var modelo = require('../modelo/modelo'),
 controlador = (req,res,next)=>{
 
 }

@@ -4,10 +4,10 @@ var express = require('express'),
 	morgan = require('morgan'),
 	jade = require('jade'),
 	publico = express.static( __dirname +'/publico'),
-		rutas = require('./rutas/rutas'),
+	rutas = require('./src/rutas/rutas'),
 	apires = require('express-method-override')('_method'),
 	faviconUrl =  __dirname + '/publico/img/1.png',
-	vista = __dirname + '/view',
+	vista = __dirname + '/src/view',
 	puerto = (process.env.PORT||3000),
 	app = express()
 
